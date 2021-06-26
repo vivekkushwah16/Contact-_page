@@ -1,0 +1,70 @@
+*{
+  box-sizing: border-box;
+}
+body {
+  font-size:14px;
+  margin: 0;
+  padding: 0;
+}
+/*================================================================ Button ==========================================================================*/
+.primary-btn{
+  padding:0.7rem 1rem;
+  height:2.7rem;
+  display:block;
+  border:0;
+  border-radius: 2px;
+  font-weight:500;
+  background: #0EE5DD;
+  color:#000;
+  text-decoration: none;
+  cursor: pointer;
+  text-align:center;
+  transition: all 0.5s;
+}
+.primary-btn:hover{
+  background-color:#00D9EE;
+}
+.secondary-btn{
+  padding:0.7rem 1rem;
+  height:2.7rem;
+  display:block;
+  border:1px solid #f4f4f4;
+  border-radius: 2px;
+  font-weight:500;
+  background: none;
+  color:#fff;
+  text-decoration: none;
+  cursor: pointer;
+  text-align:center;
+  transition: border-color 0.5s;
+}
+.secondary-btn:hover{
+  border-color:#0EE5DD;
+  color:#0EE5DD
+}
+/*============================================================= Media Queries =====================================================================*/
+@media(min-width:1200px){
+  .left{
+      flex:4;
+  }
+  .right{
+      flex:6;
+  }
+}
+@media(max-width:685px){
+  .secondary-btn{
+      height:100%;
+  }
+}
+@media(max-width:685px){
+  body{
+    overflow: auto;
+  }
+  .right{
+    display: none;
+  }
+  #signin .text-input{
+    margin-bottom: 0.7rem;
+  }
+
+}
